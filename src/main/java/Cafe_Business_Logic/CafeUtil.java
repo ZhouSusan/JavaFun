@@ -1,4 +1,5 @@
 package Cafe_Business_Logic;
+import java.util.ArrayList;
 
 public class CafeUtil {
     public int getStreakGoal() {
@@ -9,4 +10,20 @@ public class CafeUtil {
 
         return streakGoal;
     }
+
+    public double getOrderTotal(double[] prices) {
+        double sum = 0;
+        for (int j = 0; j < prices.length; j++) {
+            sum += prices[0];
+        }
+
+        return sum;
+    }
+
+    public void displayMenu(ArrayList<String> menuItems) {
+        for (int l = 0; l < menuItems.size(); l++) {
+            System.out.format("%s %s", l, menuItems.get(l));
+        }
+    }
+    
 }
